@@ -32,7 +32,9 @@
                             <outlet property="delegate" destination="N1c-im-bJe" id="JkN-dW-CDZ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Emoji Dictionary" id="xSK-Rq-kyY"/>
+                    <navigationItem key="navigationItem" title="Emoji Dictionary" id="xSK-Rq-kyY">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="PDR-ge-I99"/>
+                    </navigationItem>
                     <connections>
                         <segue destination="t7l-8r-6gz" kind="show" identifier="ourSegue" id="FVX-UG-02V"/>
                     </connections>
