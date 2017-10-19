@@ -13,6 +13,7 @@ class ImojiTableViewController: UITableViewController {
     //Property
     var emojis = ["😀","😃","😄","😁", "😆"]
     // Ctrl-CMD-Spacebar
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

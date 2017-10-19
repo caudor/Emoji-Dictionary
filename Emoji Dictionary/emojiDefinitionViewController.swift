@@ -14,6 +14,8 @@ class emojiDefinitionViewController: UIViewController {
     
     @IBOutlet weak var emojiLabel: UILabel!
     @IBOutlet weak var emojiDefLabel: UILabel!
+    @IBOutlet weak var birthLabel: UILabel!
+    @IBOutlet weak var categoryLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,18 +23,28 @@ class emojiDefinitionViewController: UIViewController {
         emojiLabel.text = emoji
         if emoji == "😀"{
             emojiDefLabel.text = "Grinning Face"
+            birthLabel.text = "Birth Year: 2010"
+            categoryLabel.text = "Category: Faces"
         }
         if emoji == "😃"{
             emojiDefLabel.text = "Grinning Face with open mouth"
+            birthLabel.text = "Birth Year: 2012"
+            categoryLabel.text = "Category: Faces"
         }
         if emoji == "😄"{
             emojiDefLabel.text = "Grinning Face with squinting eyes"
+            birthLabel.text = "Birth Year: 2011"
+            categoryLabel.text = "Category: Faces"
         }
         if emoji == "😁"{
             emojiDefLabel.text = "Grinning Face with smiling eyes"
+            birthLabel.text = "Birth Year: 2012"
+            categoryLabel.text = "Category: Faces"
         }
         if emoji == "😆"{
             emojiDefLabel.text = "Grinning Face with tightly closed eyes"
+            birthLabel.text = "Birth Year: 2014"
+            categoryLabel.text = "Category: Faces"
         }
         
     }

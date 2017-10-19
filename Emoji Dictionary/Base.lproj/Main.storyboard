@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -63,18 +63,36 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: People" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jjo-3d-9tD">
+                                <rect key="frame" x="121.5" y="599" width="132" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birth Year: 2010" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jvd-01-vQF">
+                                <rect key="frame" x="126.5" y="562" width="122" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="DJv-JG-FQb" firstAttribute="top" secondItem="p9a-Lx-QNC" secondAttribute="top" constant="60" id="5R3-qH-OPB"/>
+                            <constraint firstItem="Jvd-01-vQF" firstAttribute="centerX" secondItem="hoA-Dy-5y5" secondAttribute="centerX" id="CS6-Qf-hWG"/>
+                            <constraint firstItem="vJu-Uq-RXf" firstAttribute="top" secondItem="Jjo-3d-9tD" secondAttribute="bottom" constant="16" id="DZK-uD-Ivv"/>
+                            <constraint firstItem="Jjo-3d-9tD" firstAttribute="centerX" secondItem="hoA-Dy-5y5" secondAttribute="centerX" id="HJw-W0-1f9"/>
                             <constraint firstItem="DJv-JG-FQb" firstAttribute="centerX" secondItem="hoA-Dy-5y5" secondAttribute="centerX" id="NVr-Re-5gs"/>
                             <constraint firstItem="p9a-Lx-QNC" firstAttribute="trailing" secondItem="vJu-Uq-RXf" secondAttribute="trailing" constant="10" id="Tr6-Wr-vA9"/>
                             <constraint firstItem="vJu-Uq-RXf" firstAttribute="leading" secondItem="p9a-Lx-QNC" secondAttribute="leading" constant="10" id="aoa-F7-RXl"/>
+                            <constraint firstItem="Jjo-3d-9tD" firstAttribute="top" secondItem="Jvd-01-vQF" secondAttribute="bottom" constant="16" id="s5j-LI-34C"/>
                             <constraint firstItem="p9a-Lx-QNC" firstAttribute="bottom" secondItem="vJu-Uq-RXf" secondAttribute="bottom" constant="10" id="yNp-R8-PZC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="p9a-Lx-QNC"/>
                     </view>
                     <connections>
+                        <outlet property="birthLabel" destination="Jvd-01-vQF" id="NHL-fX-9Kj"/>
+                        <outlet property="categoryLabel" destination="Jjo-3d-9tD" id="p5n-BZ-3Kf"/>
                         <outlet property="emojiDefLabel" destination="vJu-Uq-RXf" id="Lex-G3-qnf"/>
                         <outlet property="emojiLabel" destination="DJv-JG-FQb" id="2V8-X6-qSx"/>
                     </connections>
